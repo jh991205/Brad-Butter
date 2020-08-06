@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="lifestyle.html">Life Posts</a></li>
+          <li class = "mobile"><a href="recipes.html" class = "mobile">Recipe Index</a></li>
+
+          <!-- Recipes dropdown menu. Referenced lab 12 dropdown exercise.-->
+          <li>
+            <a href="#" id="recipesNavItem">Recipe Index<span id = "downCaret" class="downCaret">&#x25BC;</span><span id = "upCaret" class="upCaret hidden">&#x25B2;</span></a>
+            <ul id="recipesDropdown" class="nav-dropdown hidden">
+              <li><a href="recipes.html"> All Recipes </a></li>
+              <li><a href="japancurry.html">Japanese Curry</a></li>
+              <li><a href="lavacake.html">Lavendar Lava Cake</a></li>
+              <li><a href="layercake.html">Layercake</a></li>
+              <li><a href="miso-soup.html">Miso Soup</a></li>
+            </ul>
+          </li>
+
+          <!-- Only show this link in mobile version. If not mobile, show entire dropdown -->
+
+        </ul>
+      </nav>
+      <h1 class = "banner-text"> welcome </h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="main">
+        <h1 class = "about-me"> About Me </h1>
+        <img class="main-photo" id = "brad-about" src="images/about.jpg" alt="Bradley Chen"/>
+        <p class="source"> Source: <cite><a href="https://www.bradandbutter.net">Brad and Butter</a></cite></p>
+        <h1> Bradley Chen </h1>
+
+        <p>My name is Bradley and I am a currently a junior at Cornell University's Hotel School. Growing up in Hong Kong, America, and Shanghai, I often had to travel to accommodate to my parents' busy schedules. As a result, exposure to the hospitality industry was inevitable in my childhood, and I gradually began to fall in love with the concept of service. </p>
+
+        <p>My passion for baking is one that has stuck with me since I was six years old, when I learned sticking my head into a oven was probably not the best idea in the world. At the age of 14, I attempted to jump into the world of blogging, and created what I can only call an embarrassment to my career thus far. Fortunately, I am back! Here, I will be sharing original recipes inspired by what I see, live, and breathe. Everyday I wake up with one goal in mind: to say goodbye to someone knowing that I made their day a little better. This blog is a manifestation of this belief, and I really hope anyone who stumbles across this domain enjoys their time spent here. </p>
+        <div class = 'emaill'>
+          <p>If you have any questions about the blog or about me, please feel free to shoot an email to <a href="mailto:jon@example.org">thebradandbutter@gmail.com</a>. Once again, I am so glad to have you here, and welcome to Brad & Butter.</p>
+        </div>
+        <h2> faq </h2>
+        <dl>
+          <dt> what is my all-time recipe? </dt>
+          <dd> chocolate Banana Bread </dd>
+
+          <dt> what is my favorite food? </dt>
+          <dd> fried chicken </dd>
+
+          <dt> out of all the places I have travelled to, what my most favorite place and where do I want to travel most next? </dt>
+          <dd> I loved the time I travelled to Japan, but I really want to travel to Switzerland one day. </dd>
+
+          <dt> what are the meanings of your tattoos </dt>
+          <dd> they all mean different things, but they help me appreciate myself, the people around me, and life as a whole. </dd>
+
+          <dt> what do I use to take my photos? </dt>
+          <dd> I currently use an iPhone Xr, but am looking to move to a DSLR. </dd>
+
+          <dt> where do I get my inspirations from? </dt>
+          <dd> I get my inspiration from other food bloggers, firends, family members, and traditional Chinese Cuisines. </dd>
+        </dl>
+
+        <img id = "about-bottom" src="images/ban.png" alt="compolation of Brad's pictures"/>
+      </div>
+
+      <div class="aside-desktop">
+        <h1> Meet the Brad behind the Butter... </h1>
+        <img src="images/mix.png" alt="Bradley mixing drinks">
+
+
+        <hr/>
+
+        <h2 class="aside-poem"> eat pretty</h2>
+        <h2 class="aside-poem"> drink pretty</h2>
+        <h2 class="aside-poem"> sing pretty</h2>
+        <h2 class="aside-poem"> live pretty</h2>
+        <h2 class="aside-poem"> you are pretty</h2>
+
+
+        <hr/>
+
+        <h3> Recent Posts </h3>
+        <p><a href="lavacake.html"> >> Lava Cake </a></p>
+        <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+        <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+        <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+        <hr/>
+
+        <a href="https://www.facebook.com/chenbradley9">
+          <img class="icon" src="images/fb.png" alt="facebook logo"/>
+        </a>
+
+        <a href="https://www.instagram.com/thebradandbutter/">
+          <img class="icon" src="images/insta.png" alt="instagram logo"/>
+        </a>
+
+        <a href="https://www.pinterest.com/thebradandbutter/">
+          <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+        </a>
+
+        <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+          <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="aside-mobile">
+      <h1> Meet the Brad behind the Butter... </h1>
+      <img src="images/mix.png" alt="Bradley mixing drinks">
+
+      <hr/>
+
+      <h2 class="aside-poem"> eat pretty</h2>
+      <h2 class="aside-poem"> drink pretty</h2>
+      <h2 class="aside-poem"> sing pretty</h2>
+      <h2 class="aside-poem"> live pretty</h2>
+      <h2 class="aside-poem"> you are pretty</h2>
+
+
+      <hr/>
+
+      <h3> Recent Posts </h3>
+      <p><a href="lavacake.html"> >> Lava Cake </a></p>
+      <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+      <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+      <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+      <hr/>
+
+      <a href="https://www.facebook.com/chenbradley9">
+        <img class="icon" src="images/fb.png" alt="facebook logo"/>
+      </a>
+
+      <a href="https://www.instagram.com/thebradandbutter/">
+        <img class="icon" src="images/insta.png" alt="instagram logo"/>
+      </a>
+
+      <a href="https://www.pinterest.com/thebradandbutter/">
+        <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+      </a>
+
+      <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+        <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Source: <cite><a href="https://www.bradandbutter.net">Brad and Butter</a></cite>
+  </footer>
+</body>
+</html>

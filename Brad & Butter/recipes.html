@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brad and Butter - Menu</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" />
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="lifestyle.html">Life Posts</a></li>
+          <li class = "mobile"><a href="recipes.html" class = "mobile">Recipe Index</a></li>
+
+          <!-- Recipes dropdown menu. Referenced lab 12 dropdown exercise.-->
+          <li>
+            <a href="#" id="recipesNavItem">Recipe Index<span id = "downCaret" class="downCaret">&#x25BC;</span><span id = "upCaret" class="upCaret hidden">&#x25B2;</span></a>
+            <ul id="recipesDropdown" class="nav-dropdown hidden">
+              <li><a href="recipes.html">All Recipes</a></li>
+              <li><a href="japancurry.html">Japanese Curry</a></li>
+              <li><a href="lavacake.html">Lavendar Lava Cake</a></li>
+              <li><a href="layercake.html">Layercake</a></li>
+              <li><a href="miso-soup.html">Miso Soup</a></li>
+            </ul>
+          </li>
+
+          <!-- Only show this link in mobile version. If not mobile, show entire dropdown -->
+
+        </ul>
+      </nav>
+      <h1 class = "banner-text"> welcome  </h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="main">
+
+        <a href = "japancurry.html"><h2>Fall Japanese Curry</h2></a>
+        <div class = "recipe-poem">
+          <div class = "recipe-description">
+            <p>"The secret ingredient to her recipe was the one and only japanese golden curry roux cubes." </p>
+          </div>
+          <div class = "recipe-image">
+            <a href = "japancurry.html">
+              <figure>
+                <img src = "images/r-japanese-curry.jpg" alt = "Japanese Curry" />
+                <figcaption> click to view the full recipe </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class = "poem-content1">
+            <p> silent screams through </p>
+            <p> white noise streams  </p>
+            <p> her dreams don’t seem to fade </p>
+
+            <p> the drying petals  </p>
+            <p> caress her lonely face </p>
+
+            <p> she’s  </p>
+          </div>
+        </div>
+
+        <a href = "lavacake.html"><h2>White Chocolate Lavender Lava Cake</h2></a>
+        <div class = "recipe-poem">
+          <div class = "recipe-description">
+            <p>"That moist, delicate cake stuffed with a hot, creamy filling that just oozes out — pastry perfection."</p>
+          </div>
+          <div class = "recipe-image">
+            <a href = "lavacake.html">
+              <figure>
+                <img src = "images/r-lavacake-bake.jpg" alt = "Lava Cake" />
+                <figcaption> click to view the full recipe </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class = "poem-content1">
+            <p> dreams of firelit faces </p>
+            <p> and undefined cases. </p>
+            <p> he flirts with perfection, </p>
+            <p> incapable of accepting his grievances. </p>
+
+            <p> these crooked smiles and  </p>
+            <p> tilted tiles. they  </p>
+            <p> yearn for the warmth  </p>
+            <p> of the damp winter night. </p>
+
+            <p> so be it, </p>
+            <p> beauty is seldom intentional </p>
+          </div>
+        </div>
+
+        <a href = "layercake.html"><h2>Peanut Butter and Apple Layer Cake</h2></a>
+        <div class = "recipe-poem">
+          <div class = "recipe-description">
+            <p>"There was something about the cold, crisp apples  paired and the smooth nutty spread that I couldn’t get over."</p>
+          </div>
+          <div class = "recipe-image">
+            <a href = "layercake.html">
+              <figure>
+                <img src = "images/r-layercake.png" alt = "Layer Cake" />
+                <figcaption> click to view the full recipe </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class = "poem-content1">
+            <p> it’s hard to forget,  </p>
+            <p> screams of a sun that bathe in its own addiction </p>
+
+            <p> the supple rays who  </p>
+            <p> coax the blind, oblivious to that </p>
+            <p> bottomless void that resides within.  </p>
+
+            <p> pure bliss in  </p>
+            <p> comfort, less the devil;  </p>
+            <p> says the mind.  </p>
+
+            <p> and we all know </p>
+            <p> better, but  </p>
+            <p> where else can we go. </p>
+          </div>
+        </div>
+
+        <a href = "miso-soup.html"><h2>Lemon Miso Noodle Soup with Tempura Lemon</h2></a>
+        <div class = "recipe-poem">
+          <div class = "recipe-description">
+            <p>"From the spicy ginger and zesty lemon to the soothing earthiness of the miso, this dish is the perfect way to start a chilly fall morning."</p>
+          </div>
+          <div class = "recipe-image">
+            <a href = "miso-soup.html">
+              <figure>
+                <img src = "images/r-miso.jpg" alt = "Miso Soup" />
+                <figcaption> click to view the full recipe </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class = "poem-content1">
+            <p> dreams end on  </p>
+            <p> fogged stained glasses. </p>
+            <p> can’t face the masses  </p>
+            <p> without the rocks piled  </p>
+            <p> glasses on glasses on glasses </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-desktop">
+        <h2> Meet the brad behind the butter... </h2>
+        <img src="images/mix.png" alt="Bradley mixing drinks">
+        <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+        <a href="about.html">Read More</a>
+
+        <hr/>
+
+        <h2 class="aside-poem"> eat pretty</h2>
+        <h2 class="aside-poem"> drink pretty</h2>
+        <h2 class="aside-poem"> sing pretty</h2>
+        <h2 class="aside-poem"> live pretty</h2>
+        <h2 class="aside-poem"> you are pretty</h2>
+
+
+        <hr/>
+
+        <h3> recent posts </h3>
+        <p><a href="lavacake.html"> >> Lava Cake </a></p>
+        <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+        <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+        <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+        <hr/>
+
+        <a href="https://www.facebook.com/chenbradley9">
+          <img class="icon" src="images/fb.png" alt="facebook logo"/>
+        </a>
+        <a href="https://www.instagram.com/thebradandbutter/">
+          <img class="icon" src="images/insta.png" alt="instagram logo"/>
+        </a>
+        <a href="https://www.pinterest.com/thebradandbutter/">
+          <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+        </a>
+        <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+          <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+        </a>
+
+        <hr/>
+
+        <h3> contact info </h3>
+        <a href="mailto:jon@example.org">thebradandbutter@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="aside-mobile">
+      <h2> meet the brad behind the butter... </h2>
+      <img src="images/mix.png" alt="Bradley mixing drinks">
+      <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+      <a href="about.html">Read More</a>
+
+      <hr/>
+
+      <h2 class="aside-poem"> eat pretty</h2>
+      <h2 class="aside-poem"> drink pretty</h2>
+      <h2 class="aside-poem"> sing pretty</h2>
+      <h2 class="aside-poem"> live pretty</h2>
+      <h2 class="aside-poem"> you are pretty</h2>
+
+
+      <hr/>
+
+      <h3> recent posts </h3>
+      <p><a href="lavacake.html"> >> Lava Cake </a></p>
+      <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+      <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+      <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+      <hr/>
+
+      <a href="https://www.facebook.com/chenbradley9">
+        <img class="icon" src="images/fb.png" alt="facebook logo"/>
+      </a>
+      <a href="https://www.instagram.com/thebradandbutter/">
+        <img class="icon" src="images/insta.png" alt="instagram logo"/>
+      </a>
+      <a href="https://www.pinterest.com/thebradandbutter/">
+        <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+      </a>
+      <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+        <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+      </a>
+
+      <hr/>
+
+      <h3> contact info </h3>
+      <a href="mailto:jon@example.org">thebradandbutter@gmail.com</a>
+    </div>
+  </main>
+
+  <footer>
+    Source: <cite><a href="https://www.bradandbutter.net">Brad and Butter</a></cite>
+  </footer>
+</body>
+</html>

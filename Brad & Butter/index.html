@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <img src="images/logo.png" alt="logo" />
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="lifestyle.html">Life Posts</a></li>
+          <li class = "mobile"><a href="recipes.html" class = "mobile">Recipe Index</a></li>
+
+          <!-- Recipes dropdown menu. Referenced lab 12 dropdown exercise.-->
+          <li>
+            <a href="#" id="recipesNavItem">Recipe Index<span id = "downCaret" class="downCaret">&#x25BC;</span><span id = "upCaret" class="upCaret hidden">&#x25B2;</span></a>
+            <ul id="recipesDropdown" class="nav-dropdown hidden">
+              <li><a href="recipes.html">All Recipes</a></li>
+              <li><a href="japancurry.html">Japanese Curry</a></li>
+              <li><a href="lavacake.html">Lavendar Lava Cake</a></li>
+              <li><a href="layercake.html">Layercake</a></li>
+              <li><a href="miso-soup.html">Miso Soup</a></li>
+            </ul>
+          </li>
+
+          <!-- Only show this link in mobile version. If not mobile, show entire dropdown -->
+
+        </ul>
+      </nav>
+      <h1 class = "banner-text"> welcome home </h1>
+    </div>
+  </header>
+
+  <!-- Referenced code from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+  <main>
+    <div class = 'pgpg'>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade mySlides1">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/brad.jpg" alt="Bradley">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/menu.jpeg" alt="restaurnt's menu">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/friends.png" alt="Brad and friends" >
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/fig.jpg" alt="fig" >
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/mountain2.jpg" alt="Bradley in Banff" >
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <div class = "content">
+      <div class="main">
+
+        <div class="latest-post">
+          <h1>Latest Posts</h1>
+
+          <a href="japancurry.html">
+            <h2> Fall Japanese Curry </h2>
+            <div class = "home-poem">
+              <div class="poem-content">
+                <p> silent screams through </p>
+                <p> white noise streams  </p>
+                <p> her dreams don’t seem to fade </p>
+
+                <p> the drying petals  </p>
+                <p> caress her lonely face </p>
+
+                <p> he just can't come to; </p>
+                <p> can't see himself through; </p>
+                <p> not like the others do. </p>
+
+                <p> drowns out the entourage and starts his life anew </p>
+              </div>
+
+              <div class="poem-img">
+                <img src="images/the-entourage.jpg" alt="flower bouquet"/>
+              </div>
+            </div>
+          </a>
+
+            <hr/>
+          <a href="miso-soup.html">
+            <h2> Lemon Miso Noodle Soup with Tempura Lemon </h2>
+            <div class = "home-poem">
+              <div class="poem-content">
+                <p> dreams end on  </p>
+                <p> fogged stained glasses. </p>
+                <p> can’t face the masses  </p>
+                <p> without the rocks piled  </p>
+                <p> glasses on glasses on glasses </p>
+              </div>
+              <div class="poem-img">
+                <img src="images/glasses-cropped.jpg" alt="bradley">
+              </div>
+            </div>
+          </a>
+
+            <hr/>
+
+          <a href="layercake.html">
+            <h2> Peanut Butter & Apple Layer Cake </h2>
+            <div class = "home-poem">
+              <div class="poem-content">
+                <p> it’s hard to forget, </p>
+                <p> screams of a sun that bathe in its own addiction </p>
+
+                <p> the supple rays who  </p>
+                <p> coax the blind, oblivious to that </p>
+                <p> bottomless void that resides within.  </p>
+
+                <p> pure bliss in  </p>
+                <p> comfort, less the devil;  </p>
+                <p> says the mind.  </p>
+
+                <p> and we all know </p>
+                <p> better, but  </p>
+                <p> where else can we go. </p>
+              </div>
+
+              <div class="poem-img">
+                <img src="images/egg.jpeg" alt="fried eggs">
+              </div>
+            </div>
+          </a>
+
+            <hr/>
+
+          <a href="lavacake.html">
+            <h2> White Chocolate Lavender Lava Cake </h2>
+            <div class = "home-poem">
+
+              <div class="poem-content">
+                <p> dreams of firelit faces </p>
+                <p> and undefined cases. </p>
+                <p> he flirts with perfection, </p>
+                <p> incapable of accepting his grievances. </p>
+
+                <p> these crooked smiles and  </p>
+                <p> tilted tiles. they  </p>
+                <p> yearn for the warmth  </p>
+                <p> of the damp winter night. </p>
+
+                <p> so be it, </p>
+                <p> beauty is seldom intentional </p>
+              </div>
+              <div class="poem-img">
+                <img src="images/plate.jpg" alt="colorful plate">
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="aside-desktop">
+        <h1> Meet the Brad behind the Butter... </h1>
+        <img src="images/mix.png" alt="Bradley mixing drinks">
+        <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+        <a href="about.html">Read More</a>
+
+        <hr/>
+
+        <h2 class="aside-poem"> eat pretty</h2>
+        <h2 class="aside-poem"> drink pretty</h2>
+        <h2 class="aside-poem"> sing pretty</h2>
+        <h2 class="aside-poem"> live pretty</h2>
+        <h2 class="aside-poem"> you are pretty</h2>
+
+
+        <hr/>
+
+        <h3> Recent Posts </h3>
+        <p><a href="lavacake.html"> >> Lava Cake </a></p>
+        <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+        <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+        <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+        <hr/>
+
+        <a href="https://www.facebook.com/chenbradley9">
+          <img class="icon" src="images/fb.png" alt="facebook logo"/>
+        </a>
+
+        <a href="https://www.instagram.com/thebradandbutter/">
+          <img class="icon" src="images/insta.png" alt="instagram logo"/>
+        </a>
+
+        <a href="https://www.pinterest.com/thebradandbutter/">
+          <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+        </a>
+
+        <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+          <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="aside-mobile">
+      <h1> Meet the Brad behind the Butter... </h1>
+      <img src="images/mix.png" alt="Bradley mixing drinks">
+      <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+      <a href="about.html">Read More</a>
+
+      <hr/>
+
+      <h2 class="aside-poem"> eat pretty</h2>
+      <h2 class="aside-poem"> drink pretty</h2>
+      <h2 class="aside-poem"> sing pretty</h2>
+      <h2 class="aside-poem"> live pretty</h2>
+      <h2 class="aside-poem"> you are pretty</h2>
+
+
+      <hr/>
+
+      <h3> Recent Posts </h3>
+      <p><a href="lavacake.html"> >> Lava Cake </a></p>
+      <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+      <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+      <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+      <hr/>
+
+      <a href="https://www.facebook.com/chenbradley9">
+        <img class="icon" src="images/fb.png" alt="facebook logo"/>
+      </a>
+
+      <a href="https://www.instagram.com/thebradandbutter/">
+        <img class="icon" src="images/insta.png" alt="instagram logo"/>
+      </a>
+
+      <a href="https://www.pinterest.com/thebradandbutter/">
+        <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+      </a>
+
+      <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+        <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Source: <cite><a href="https://www.bradandbutter.net">Brad and Butter</a></cite>
+  </footer>
+</body>
+</html>

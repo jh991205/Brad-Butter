@@ -1,0 +1,695 @@
+/* for everything */
+body {
+  font-family: garamond, serif;
+  font-size: 18px;
+  background-color: #8D8B8B;
+  width: 97%;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+p {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #535353;
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 35px;
+  font-style: italic;
+  font-family: "Snell Roundhand", cursive;
+}
+
+header img {
+  margin-bottom: 10px;
+}
+
+.banner-text {
+  font-family: serif;
+}
+
+/* nav bar formatting */
+
+.nav-bar {
+  display: block;
+  padding-bottom: 50px;
+}
+
+.nav-bar img {
+  width: 300px;
+  height: auto;
+}
+
+nav ul {
+  border-top: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  margin: 3px 0px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+nav ul li  {
+  flex: none;
+  list-style: none;
+  padding: 5px 25px;
+  position: relative;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  width: 235px;
+  background-color: #FFFFFF;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #8D8B8B;
+}
+
+nav ul li a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* Dropdown menu */
+
+nav .nav-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+nav .nav-dropdown li {
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: 0px;
+}
+
+.downCaret, .upCaret {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+/* formatting content */
+
+main, footer {
+  background-color: white;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_image_center.asp -> How to center images */
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header img {
+  width:300px;
+  height:auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  flex-basis: 70%;
+  flex-grow: 3;
+  padding: 20px 70px 20px 70px;
+}
+
+.aside-desktop {
+  flex-basis: 20%;
+  flex-grow: 1;
+  padding: 20px;
+
+  border-left: 1px solid #747474;
+}
+
+.aside-mobile {
+  display: none;
+}
+
+.main-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a, a:visited {
+  color: #8D8B8B;
+  text-decoration: none;
+}
+
+.hidden {
+  display:none !important
+}
+
+hr {
+  margin: 50px 0px;
+}
+
+.aside-poem {
+  text-align: center;
+  font-style: italic;
+}
+
+.latest-post h1, .latest-post h2 {
+  text-align: center;
+}
+
+/* source formatting */
+
+.source, .source a:visited, footer {
+  font-size: 8px;
+  color: #8D8B8B;
+}
+
+/* gallery slideshow formatting */
+/* Referenced code from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 1em;
+  height: 500px;
+  width: 650px;
+}
+
+.mySlides{
+  display: none;
+}
+
+.mySlides1 {
+  display: block
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  display: inline;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*about page formatting */
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+/* Number List */
+
+ol li {
+  list-style: number;
+}
+
+.icon {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* pages navigating back and next for recipes and Lifestyle*/
+
+.back-forward-posts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 30px;
+
+}
+
+.back-forward-posts {
+  margin: 0 auto;
+}
+
+
+
+/*comment form */
+
+.comment-form {
+  border-top: 1px solid #8D8B8B;
+  padding-top: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  flex-grow: 1;
+}
+
+.top-form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-right-align {
+  /* margin-left: 10px; */
+  justify-content: flex-end;
+}
+
+.p-comment {
+  color: #8D8B8B;
+}
+
+label {
+  text-align: right;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: 100px;
+  margin-right: 1em;
+  color: #8D8B8B;
+}
+
+textarea {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 0px;
+  padding-right: 0px;
+  height: 5em;
+}
+
+.input-container-submit {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#submit-comments {
+  display: flex;
+  margin-bottom: 1em;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.errorMessage {
+  display: block;
+  color: red;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Other styles */
+
+img {
+  height:300px;
+  width:auto;
+}
+
+button {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+}
+
+.pic img {
+  width: 200px;
+  height:auto;
+}
+
+.pic p {
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.aside-mobile {
+  display: none;
+}
+
+.poem2 {
+  margin-top: 30px;
+}
+
+/*recipe index recipe quote*/
+
+.recipe-description {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Poem styles */
+
+.recipe-poem, .lifestyle-poem, .home-poem {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.recipe-image, .recipe-description, .poem-content {
+  width: 30%;
+  padding-left: 0;
+  padding-right: 2px;
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: center;
+}
+
+.lifestyle-image, .lifestyle-poem poem-content, .poem-img, .home-poem poem-content {
+  width: 50%;
+  padding-left: 0;
+  padding-right: 1em;
+  padding-top: 0em;
+  margin-top: 0em;
+  margin-left: 10px;
+}
+
+.poem-content {
+  flex-grow: 2;
+}
+
+.poem-content1{
+  display: flex;
+  flex-direction:column;
+}
+
+.recipe-poem {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.recipe-image, .recipe-description, .recipe-poem poem-content {
+  width: 100%;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.lifestyle-poem {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.lifestyle-image, .lifestyle-poem poem-content {
+  width: 100%;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.pgpg {
+  display: flex;
+  flex-direction: row;
+}
+
+.email a {
+  color:blue;
+}
+
+a h2 {
+  text-align: center;
+}
+
+.about-me {
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+
+  nav ul li {
+    font-size: 100%;
+    justify-content: center;
+  }
+
+  nav li {
+    width: 140px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  /* Comments form */
+
+  .input-container {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    min-width: 100px;
+  }
+
+  .form-right-align {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .form-right-align label {
+    justify-content: flex-end;
+  }
+
+  textarea {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .errorMessage {
+    display: block;
+    color: red;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #about-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+
+  body {
+    font-size: 120%;
+  }
+
+  .aboutpic {
+    display: none;
+  }
+
+  .nav-bar {
+    padding-bottom: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    font-size: 120%;
+    justify-content: center;
+  }
+
+  nav li {
+    width: 200px;
+  }
+
+  #recipesNavItem, #recipesDropdown {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  /* Recipes.html, lifestyle.html */
+  .recipe-poem {
+    display: block;
+  }
+
+  .recipe-image, .recipe-description, .recipe-poem poem-content {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+
+  .lifestyle-poem {
+    display: block;
+  }
+
+  .lifestyle-image, .lifestyle-poem poem-content {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+
+  .aside-desktop {
+    display: none;
+  }
+
+  .poem-content1{
+    display: flex;
+    flex-direction:column;
+  }
+
+  .poem-content1 p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .aside-mobile {
+    display: block;
+    padding: 20px;
+  }
+
+  .aside-mobile img {
+    height: auto;
+    max-width: 80%
+  }
+
+  /* Comments form */
+
+  .input-container {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    min-width: 100px;
+  }
+
+  .form-right-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .form-right-align label {
+    display: block;
+    float: right;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+
+  textarea {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .errorMessage {
+    display: block;
+    color: red;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Image gallery */
+  .slideshow-container img {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+    max-width: 80%;
+  }
+
+  #about-bottom {
+    display: none;
+  }
+}

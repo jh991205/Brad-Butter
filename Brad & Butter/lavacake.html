@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brad and Butter - White Chocolate Lavendar Lava Cake</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" />
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="lifestyle.html">Life Posts</a></li>
+          <li class = "mobile"><a href="recipes.html" class = "mobile">Recipe Index</a></li>
+
+          <!-- Recipes dropdown menu. Referenced lab 12 dropdown exercise.-->
+          <li>
+            <a href="#" id="recipesNavItem">Recipe Index<span id = "downCaret" class="downCaret">&#x25BC;</span><span id = "upCaret" class="upCaret hidden">&#x25B2;</span></a>
+            <ul id="recipesDropdown" class="nav-dropdown hidden">
+              <li><a href="recipes.html"> All Recipes</a></li>
+              <li><a href="japancurry.html">Japanese Curry</a></li>
+              <li><a href="lavacake.html">Lavendar Lava Cake</a></li>
+              <li><a href="layercake.html">Layercake</a></li>
+              <li><a href="miso-soup.html">Miso Soup</a></li>
+            </ul>
+          </li>
+
+          <!-- Only show this link in mobile version. If not mobile, show entire dropdown -->
+
+        </ul>
+      </nav>
+      <h1 class = "banner-text"> welcome  </h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="main">
+        <h1>White Chocolate Lavender Lava Cake</h1>
+        <p>February 11, 2019</p>
+
+        <section>
+          <h2>For The Hopeless Romantic</h2>
+          <p>It’s T-3 days until Valentine’s Day, and I‘ve got to be honest and say that the prospect only excites me because Valentine’s Day bakes & pastries make me happy. In other words, screw cheesy love.</p>
+
+          <p>That being said, I did feel obligated to bake & shoot a Valentine’s inspired dessert because I figure that the hopeful outnumber the angst ridden non-believers like me. Of course, you already know that my next post will be full of angst, hate for love, and all the other fantastic qualities that have defined my current, very single relationship status.</p>
+
+          <img src = "images/lavacake-romantic.jpg" alt = "Lava Cake" />
+
+          <h2>The Bake</h2>
+          <p>Is it just me, or is there a senseless connection between Valentine’s Day and Lava Cake? I get the appeal with the heart shaped cookies and chocolate covered strawberries, but lava cake? I honestly can’t think of a plausible reason why lava cake could come to symbolize love, but I must admit they are extremely tasty and delicious. That moist, delicate cake stuffed with a hot, creamy filling that just oozes out — pastry perfection.</p>
+
+          <p>This lava cake is inspired by a recipe from the British lads from SORTED food and features one of my favorite flavors — lavender! I have a feeling lavender often gets a bad rep for being “soapy” or “too floral”. Honestly, the general public is to blame because lavender only tastes like commercial bath products when overused. A teaspoon or two is more than enough.  Another aspect of lava cake I love? It’s so easy to customize. As long as you’re obsessed with chocolate — and tbh, who isn’t? — you’re good to go with this recipe. And of course, there’s no reason you can’t make this white chocolate lavender lava cake even if you’re not a huge fan of love & dove. For foodies like me, that just means I get more to myself, am I right?</p>
+
+          <p>Cheers</p>
+          <p>Bradley</p>
+          <img src = "images/lavacake-bake.jpg" alt = "Baking Lava Cake" />
+        </section>
+
+        <section>
+          <h2>Recipe</h2>
+          <h3>Ingredients (inspired by <a href = "https://sortedfood.com/recipe/whitelavacake">SORTED Food</a>)</h3>
+          <ul>
+            <li>100g white chocolate, melted</li>
+            <li>1/4 cup butter</li>
+            <li>3 eggs</li>
+            <li>1 tsp vanilla extract</li>
+            <li>1/4 cup granulated white sugar</li>
+            <li>1/4 cup all-purpose flour</li>
+            <li>2 tsp. dried lavender</li>
+            <li>1/2 tsp. salt</li>
+            <li>violet gel food coloring (as needed)</li>
+          </ul>
+
+          <h3>How to make</h3>
+          <ol>
+            <li>Grease three molds - used teacups - with butter and dust with a thin layer of equal parts flour and powdered sugar. Make sure to tap out any excess against the walls of a sink. Set aside.</li>
+
+            <li>Melt the white chocolate chunks and butter gently over a bain marie. Stir in the chopped, dried lavender.</li>
+
+            <li>In a separate bowl, combine the eggs, sugar, and vanilla and whisk until the sugar dissolves. Slowly whisk into the white chocolate and butter mixture until fully incorporated. Fold in the all-purpose flour.</li>
+
+            <li>Set aside 3 tbsp. of the batter into a separate bowl. Add a sparse amount of violet gel food coloring and whisk to dye the batter.</li>
+
+            <li>Fill the prepared moulds with approximately 1/4 cup of batter and place a tbsp. of the violet batter in the center. Top off with the remaining non-dyed batter. Freeze for at least 2 hours and up to a month.</li>
+
+            <li>Preheat the oven to 180C/355F. Bake the frozen batter for approximately 25-30 minutes, and leave to rest for 5 minutes before releasing the cakes from their molds.</li>
+
+            <li>Serve warm with whipped cream or ice cream.</li>
+            <li>Enjoy!</li>
+          </ol>
+        </section>
+
+        <section class = "back-forward-posts">
+          <a href="japancurry.html"> &lt; Previous Recipe </a>
+          <a href="layercake.html"> Next Recipe &gt; </a>
+        </section>
+
+        <section class="comment-form">
+          <p class="p-comment"> leave a reply </p>
+          <form id = "commentsForm" method = "post" action = "https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+            <div class = "top-form-row">
+
+              <div class="input-container form-style form-left-align">
+                <label for="name"> name: </label>
+                <input type="text" name="name" id="name" placeholder="name"/>
+                <span class= "errormessage hidden" id="nameerror"> A Name is required. </span>
+              </div>
+
+              <div class="input-container form-style form-right-align">
+                <label for="email"> email: </label>
+                <input type="email" name="email" id="email" placeholder="email"/>
+                <span class="errormessage hidden" id="emailerror"> A valid email is required. </span>
+              </div>
+
+            </div>
+
+            <div class = "input-container">
+              <label for = "comments"> comments: </label>
+              <textarea id = "comments" name = "comments" placeholder="leave a coment."></textarea>
+              <span class = "errorMessage hidden" id = "commentsError">
+                Comments must be less than 500 characters long.
+              </span>
+            </div>
+
+            <div class = "input-container">
+              <div class = "input-container-submit">
+                <button type = "submit" id = "submit-comments">Submit Comment</button>
+                <span class = "errorMessage hidden" id = "submitError">
+                  Please enter a comment.
+                </span>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="aside-desktop">
+        <h2> Meet the brad behind the butter... </h2>
+        <img src="images/mix.png" alt="Bradley mixing drinks">
+        <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+        <a href="about.html">Read More</a>
+
+        <hr/>
+
+        <h2 class="aside-poem"> eat pretty</h2>
+        <h2 class="aside-poem"> drink pretty</h2>
+        <h2 class="aside-poem"> sing pretty</h2>
+        <h2 class="aside-poem"> live pretty</h2>
+        <h2 class="aside-poem"> you are pretty</h2>
+
+
+        <hr/>
+
+        <h3> recent posts </h3>
+        <p><a href="lavacake.html"> >> Lava Cake </a></p>
+        <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+        <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+        <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+        <hr/>
+
+        <a href="https://www.facebook.com/chenbradley9">
+          <img class="icon" src="images/fb.png" alt="facebook logo"/>
+        </a>
+        <a href="https://www.instagram.com/thebradandbutter/">
+          <img class="icon" src="images/insta.png" alt="instagram logo"/>
+        </a>
+        <a href="https://www.pinterest.com/thebradandbutter/">
+          <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+        </a>
+        <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+          <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+        </a>
+
+        <hr/>
+
+        <h3> contact info </h3>
+        <a href="mailto:jon@example.org">thebradandbutter@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="aside-mobile">
+      <h2> meet the brad behind the butter... </h2>
+      <img src="images/mix.png" alt="Bradley mixing drinks">
+      <p> Hello and welcome to you new home! I'm Bradley, a junior Hotelie, a self-taught baker, bartender, and a flatlay freak. Here on Brad & Butter, I bake, shake, style, and snap tot tell inspiring stories. This blog is a manifestation of all the things in life at have inspired me to act upon something. And in turn, I hope that whatever I wrtie, bake, or shake can inspire other people. Click here to learn about me... </p>
+      <a href="about.html">Read More</a>
+
+      <hr/>
+
+      <h2 class="aside-poem"> eat pretty</h2>
+      <h2 class="aside-poem"> drink pretty</h2>
+      <h2 class="aside-poem"> sing pretty</h2>
+      <h2 class="aside-poem"> live pretty</h2>
+      <h2 class="aside-poem"> you are pretty</h2>
+
+
+      <hr/>
+
+      <h3> recent posts </h3>
+      <p><a href="lavacake.html"> >> Lava Cake </a></p>
+      <p><a href="miso-soup.html"> >> Miso Soup </a></p>
+      <p><a href="japancurry.html"> >> Japanese Curry </a></p>
+      <p><a href="layercake.html"> >> Layer Cake </a></p>
+
+      <hr/>
+
+      <a href="https://www.facebook.com/chenbradley9">
+        <img class="icon" src="images/fb.png" alt="facebook logo"/>
+      </a>
+      <a href="https://www.instagram.com/thebradandbutter/">
+        <img class="icon" src="images/insta.png" alt="instagram logo"/>
+      </a>
+      <a href="https://www.pinterest.com/thebradandbutter/">
+        <img class="icon" src="images/pinterest.png" alt="pinterest logo"/>
+      </a>
+      <a href="https://open.spotify.com/user/22ctbn3vvfj47cpnqamz6onki">
+        <img class="icon" src="images/spotify.png" alt="spotify logo"/>
+      </a>
+
+      <hr/>
+
+      <h3> contact info </h3>
+      <a href="mailto:jon@example.org">thebradandbutter@gmail.com</a>
+    </div>
+  </main>
+
+  <footer>
+    Source: <cite><a href="https://www.bradandbutter.net">Brad and Butter</a></cite>
+  </footer>
+</body>
+</html>
