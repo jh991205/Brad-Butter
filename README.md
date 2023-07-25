@@ -4,11 +4,11 @@
 
 #### Table of Contents
 
-1.Description
-2.Features
-3.Technologies Used
-4.Installation
-6.License
+1. Description
+2. Features
+3. Technologies Used
+4. Installation
+6. License
 
 Description:
 Welcome to the Food Blogger Website! This website showcases the culinary adventures, personal stories, and delicious recipes of our favorite food blogger. Whether you're a seasoned chef or just starting in the kitchen, there's something for everyone to enjoy.
