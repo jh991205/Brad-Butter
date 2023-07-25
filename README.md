@@ -26,6 +26,7 @@ Search Functionality: Easily find specific recipes or stories using the built-in
 1. HTML
 2. CSS
 3. JavaScript
+4. Jquery
 
 #### Installation
 
