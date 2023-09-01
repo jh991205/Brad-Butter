@@ -37,12 +37,12 @@ To run the Food Blogger Website locally, follow these steps:
 Clone the repository
 Navigate to the project directory: cd Brad-Butter
 Open the index.html file in your preferred web browser.
-Usage
+
+## Usage
 
 Upon opening the website, you will be greeted with the homepage featuring a selection of the latest recipes and stories.
-Explore the different sections, such as "Recipes" and "Personal Stories," using the navigation menu.
+Explore the different sections, such as "Recipes" and "About me", using the navigation menu.
 Click on a recipe or story to view its full details.
-To search for specific content, use the search bar located at the top of the page.
 Enjoy reading the food blogger's experiences and trying out their delicious recipes!
 Contributing
 
